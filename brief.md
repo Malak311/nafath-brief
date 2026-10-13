@@ -36,5 +36,9 @@ A star schema organizes data using a central fact table connected to dimension t
 Resource: Microsoft Learn: Understand Star Schema and the Importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
+A common misconception is that repeating any HTTP request is safe when a network connection fails. However, some requests can cause unwanted changes if they are repeated. According to RFC 9110, safe methods, such as GET, are intended to retrieve information without changing the server's state. Idempotent methods, such as PUT, have the same intended effect when repeated several times. However, this does not mean every response will be identical. Developers should understand these differences before enabling automatic retries. In emergency responders' 5G applications, correct retry handling can help prevent duplicate actions and unwanted changes when connections fail.
+
+Resource: RFC 9110: HTTP Semantics, Sections 9.2.1 and 9.2.2 - https://www.rfc-editor.org/rfc/rfc9110.html
 
 ## Open Question
+How can developers design automatic retry systems that keep emergency responders' 5G applications reliable without causing duplicate actions or unwanted changes when network connections fail?
